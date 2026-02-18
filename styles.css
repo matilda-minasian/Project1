@@ -46,6 +46,17 @@ section {
     margin-bottom: 30px;
 }
 
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+picture {
+    display: block;
+    margin: 20px auto;
+}
 
 h2 {
     color: #c62828;
@@ -67,7 +78,22 @@ dt {
 }
 
 dd {
-    margin-bottom: 12px;
+    margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+#lastnameYan:valid,
+#lastnameIan:valid {
+  background-color: palegreen;
+}
+
+#lastnameYan:invalid,
+#lastnameIan:invalid {
+  background-color: lightpink;
 }
 
 button {
