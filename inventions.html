@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="A page about important inventions by Armenian inventors and their impact on the world.">
+    <link rel="stylesheet" href="styles.css">
     <title>Learn More About Armenia!</title>
 </head>
 
@@ -25,6 +26,16 @@
     <main>
 
         <section>
+            <p>Choose an inventorfrom this list to learn more about them and their invention:</p>
+            <input list="inventors" onchange="location = '#' + this.value">
+            <datalist id="inventors">
+                <option value="Raymond Damadian">
+                <option value="Hovannes Adamian">
+                <option value="Alex Manoogian">
+                <option value="Luther Simjian">
+            </datalist>
+        </section>
+        <section>
 
         <h2>Major Armenian Inventors</h2>
 
@@ -34,7 +45,12 @@
 
         <dl>
 
-        <dt><strong>Raymond Damadian - MRI Scanner</strong></dt>
+        <dt id="raymond-damadian">
+            <picture>
+                <img src="images/damadian.jpg" alt="Raymond Damadian" width="100">
+            </picture>
+            <strong>Raymond Damadian - MRI Scanner</strong>
+        </dt>
         <dd>
             Raymond Damadian was an Armenian-American scientist who played a major role
             in the invention of the Magnetic Resonance Imaging (MRI) scanner. This
@@ -43,7 +59,12 @@
         </dd>
 
 
-        <dt><strong>Hovannes Adamian - Color Television Technology</strong></dt>
+        <dt id="hovannes-adamian">
+            <picture>
+                <img src="images/adamian.jpg" alt="Hovannes Adamian" width="100">
+            </picture>
+            <strong>Hovannes Adamian - Color Television Technology</strong>
+        </dt>
         <dd>
             Hovannes Adamian was an Armenian engineer who helped develop early color
             television technology. His research on transmitting color images electronically
@@ -51,7 +72,12 @@
         </dd>
 
 
-        <dt><strong>Alex Manoogian - Modern Faucet Design</strong></dt>
+        <dt id="alex-manoogian">
+            <picture>
+                <img src="images/manoogian.jpg" alt="Alex Manoogian" width="100">
+            </picture>
+            <strong>Alex Manoogian - Modern Faucet Design</strong>
+        </dt>
         <dd>
             Alex Manoogian was an Armenian-American inventor who developed the modern
             single-handle faucet. His design allows users to control water temperature and
@@ -59,7 +85,12 @@
         </dd>
 
 
-        <dt><strong>Luther George Simjian - Early ATM Technology</strong></dt>
+        <dt id="luther-simjian">
+            <picture>
+                <img src="images/simjian.jpg" alt="Luther George Simjian" width="100">
+            </picture>
+            <strong>Luther George Simjian - Early ATM Technology</strong>
+        </dt>
         <dd>
             Luther George Simjian developed one of the first automatic banking machines,
             an early form of the ATM. His invention allowed customers to complete banking

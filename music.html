@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="A page about Armenian music and its cultural significance.">
+    <link rel="stylesheet" href="styles.css">
     <title>Learn More About Armenia!</title>
 </head>
 
@@ -27,63 +28,109 @@
 <section>
 <h2>Traditional Music</h2>
 
-<ul>
-    <li>
-        <strong>Yarkhushta</strong><br>
-        Yarkhushta is a traditional Armenian warrior dance song. It is performed during cultural celebrations and represents strength, 
-        unity, and the historical spirit of Armenian fighters.
-    </li>
-</ul>
+    <button onclick="document.getElementById('yark').showModal()">
+    Learn about Yarkhushta
+    </button>
+
+    <dialog id="yark">
+        <h3>Yarkhushta</h3>
+        <p>
+        Yarkhushta is a traditional Armenian warrior dance performed in pairs.
+        It symbolizes strength, unity, and the fighting spirit of Armenian history.
+        </p>
+
+        <button onclick="document.getElementById('yark').close()">
+        Close
+        </button>
+    </dialog>
 
 </section>
 
 
 <section>
-<h2>Modern Armenian Music</h2>
+    <h2>Modern Armenian Music</h2>
 
-<ul>
-    <li>
-        <strong>Kef Chlini</strong><br>
-        Kef Chlini by Ladaniva is a modern Armenian song that blends traditional Armenian folk influences with contemporary musical styles.
-    </li>
-</ul>
+    <button onclick="document.getElementById('kef').showModal()">
+    Learn about Kef Chlini
+    </button>
+
+    <dialog id="kef">
+        <h3>Kef Chlini</h3>
+        <p>
+        Kef Chlini by Ladaniva is a modern Armenian song that blends traditional
+        Armenian folk influences with contemporary musical styles.
+        </p>
+
+        <button onclick="document.getElementById('kef').close()">
+        Close
+        </button>
+    </dialog>
 
 </section>
+
 
 
 <section>
 <h2>National and Iconic Songs</h2>
 
-<ul>
+    <button onclick="document.getElementById('anthem').showModal()">
+    Learn about Mer Hayreniq
+    </button>
 
-    <li>
-        <strong>Mer Hayreniq</strong><br>
-        Mer Hayreniq is the national anthem of Armenia and one of the most important patriotic songs representing Armenian independence and identity.
-    </li>
+    <dialog id="anthem">
+        <h3>Mer Hayreniq</h3>
+        <p>
+        Mer Hayreniq is the national anthem of Armenia and one of the most important
+        patriotic songs representing Armenian independence and identity.
+        </p>
 
-    <li>
-        <strong>La Bohème (Charles Aznavour)</strong><br>
-        La Bohème is one of the most famous songs by the Armenian-French singer Charles Aznavour, one of the most internationally recognized Armenian artists.
-    </li>
+        <button onclick="document.getElementById('anthem').close()">
+        Close
+        </button>
+    </dialog>
 
-</ul>
+    <br>
+    <button onclick="document.getElementById('boheme').showModal()">
+    Learn about La Bohème
+    </button>
+
+    <dialog id="boheme">
+        <h3>La Bohème (Charles Aznavour)</h3>
+        <p>
+        La Bohème is one of the most famous songs by the Armenian-French singer
+        Charles Aznavour, one of the most internationally recognized Armenian artists.
+        </p>
+
+        <button onclick="document.getElementById('boheme').close()">
+        Close
+        </button>
+    </dialog>
 
 </section>
+
 
 
 <section>
-<h2>Popular Armenian Dance Music</h2>
+    <h2>Popular Armenian Dance Music</h2>
 
-<ul>
+    <button onclick="document.getElementById('dance').showModal()">
+    Learn about Parumenk Menk Haykakan
+    </button>
 
-    <li>
-        <strong>Parumenk Menk Haykakan</strong><br>
-        Parumenk Menk Haykakan is a popular Armenian dance anthem often played at weddings, celebrations, and cultural festivals.
-    </li>
+    <dialog id="dance">
+        <h3>Parumenk Menk Haykakan</h3>
+        <p>
+        Parumenk Menk Haykakan is a popular Armenian dance anthem often played at
+        weddings, celebrations, and cultural festivals.
+        </p>
 
-</ul>
+        <button onclick="document.getElementById('dance').close()">
+        Close
+        </button>
+    </dialog>
 
 </section>
+
 
 </main>
 
